@@ -1,6 +1,5 @@
 package hu.martinhuszti.module
 
-import hu.martinhuszti.url
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.response.respondText
@@ -11,6 +10,7 @@ import org.litote.kmongo.reactivestreams.KMongo
 
 fun Application.landingModule() {
 
+    val url = System.getenv("mongourl")?.toString() ?: "-"
 
     routing {
         get("/") {
