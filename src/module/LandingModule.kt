@@ -5,18 +5,13 @@ import io.ktor.application.call
 import io.ktor.response.respondText
 import io.ktor.routing.get
 import io.ktor.routing.routing
-import org.litote.kmongo.coroutine.coroutine
-import org.litote.kmongo.reactivestreams.KMongo
 
 fun Application.landingModule() {
-
-    val url = System.getenv("mongourl")?.toString() ?: "-"
-
     routing {
         get("/") {
-            val client = KMongo.createClient(url).coroutine //use coroutine extension
-            val database = client.getDatabase("test") //normal java driver usage
-            database.createCollection("asd")
+            //     val client = KMongo.createClient(mongoUrl).coroutine //use coroutine extension
+            //        val database = client.getDatabase("test") //normal java driver usage
+            //      database.createCollection("asd")
             call.respondText { "das" }
         }
     }
