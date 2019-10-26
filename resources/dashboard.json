@@ -2,212 +2,93 @@
   "status": "OK",
   "responseType": "postpaid",
   "postpaid": {
-    "cumulativeActualDataUsage": 0,
-    "cumulativeTotalData": 0,
     "cumulativeActualSharedDataUsage": 13000,
     "cumulativeTotalSharedData": 20480,
-    "warningText": "",
-    "unlimitedContentPackageMessage": "",
-    "noRedir": false,
-    "entitlements": [
-      "FREE_CONNECT",
-      "FREE_SOCIAL",
-      "PoolMaster",
-      "TYHTA",
-      "UCP66205",
-      "UCP66907"
-    ],
-    "poolEntitlements": [
-      "PQ_VOIP"
-    ],
-    "poolId": "835073",
-    "poolRole": "Master",
-    "offers": [],
     "pools": [
       {
-        "id": "64048",
+        "id": "78",
         "name": "Osztható adat 20 GB",
         "description": "Ezzel a csomaggal 20 GB osztható adat és 9 GB Vodafone EU roaming területen felhasználható adatkeret  áll rendelkezésedre minden számlázási ciklusban. Ha többre van szükséged, válogass kiegészítö adatcsomagjainkból!",
-        "featured": false,
-        "price": 0,
-        "active": false,
-        "type": "ioym",
         "dataUsageMb": 20480,
         "actualUsage": 13000,
-        "overfill": 0,
         "total": 20480,
-        "expirationDate": "2019-07-30T11:59:59",
-        "maxMember": 2,
-        "baseOfferIncluded": true,
-        "activeOnSubscription": true,
-        "upgradePoolIds": [],
-        "offerIdsMaster": [],
-        "offerIdsMember": [],
-        "addonIdsMaster": [],
-        "addonIdsMember": [],
-        "refillIds": [
-          "O_PQREF_714c29",
-          "O_PQREF_1714c29",
-          "O_PQREF_4761c9",
-          "68859",
-          "68860",
-          "68861",
-          "68862"
-        ],
-        "unlimitedContentPackages": [
-          "UCP67696",
-          "UCP69102",
-          "UCP68348"
-        ],
-        "psmCodes": {
-          "activation": ""
-        }
+        "expirationDate": "2019-07-30T11:59:59"
       }
     ],
     "refills": [
       {
-        "id": "O_PQREF_714c29",
+        "id": "55",
         "name": "Osztható PluszAdat 300 MB",
         "description": "Ezzel a kiegészítö adatopcióval további 300MB adat áll rendelkezésedre a tarifádban foglalt adatmennyiségeden felül 750 Ft-ért, melyet számlazárásig tudsz felhasználni, a tarifádban foglalt adatra irányadó, azonos feltételekkel. Ha MultiNet Supreme szolgáltatással is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!",
-        "active": true,
-        "price": 750,
-        "psmCodes": {
-          "activation": "TOLT 300MB",
-          "deactivation": ""
-        }
+        "price": 750
       },
       {
-        "id": "O_PQREF_1714c29",
+        "id": "44",
         "name": "Osztható PluszAdat 1 GB",
         "description": "Ezzel a kiegészítö adatopcióval további 1 GB adat áll rendelkezésedre a tarifádban foglalt adatmennyiségeden felül 1800 Ft-ért, melyet számlazárásig tudsz felhasználni, a tarifádban foglalt adatra irányadó, azonos feltételekkel. Ha MultiNet Supreme szolgáltatással is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!",
-        "active": true,
-        "price": 1800,
-        "psmCodes": {
-          "activation": "TOLT 1GB",
-          "deactivation": ""
-        }
+        "price": 1800
       },
       {
-        "id": "O_PQREF_4761c9",
+        "id": "11",
         "name": "Osztható PluszAdat 5 GB",
         "description": "Ezzel a kiegészítö adatopcióval további 5 GB adat áll rendelkezésedre a tarifádban foglalt adatmennyiségeden felül 5000 Ft-ért, melyet számlazárásig tudsz felhasználni, a tarifádban foglalt adatra irányadó, azonos feltételekkel. Ha MultiNet Supreme szolgáltatással is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!",
-        "active": true,
-        "price": 5000,
-        "psmCodes": {
-          "activation": "TOLT 5GB",
-          "deactivation": ""
-        }
+        "price": 5000
       },
       {
         "id": "68859",
         "name": "Osztható Megújuló PluszAdat 300 MB",
         "description": "Ezzel a kiegészítö adatopcióval 300MB osztható adat áll rendelkezésedre minden számlázási ciklusban havi 500 Ft-ért a tarifádban, valamit az Automatikus PluszAdat opciódba foglalt adatmennyiségeden felül. A kiegészítö opció minden hónapban megújul, így nem kell minden hónapban megrendelned újra. Ha MultiNet Supreme-el is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!  A kiegészítö adatopciót a tarifádban foglalt adat felhasználásával azonos feltételek mellett használhatod.",
-        "active": true,
-        "price": 500,
-        "psmCodes": {
-          "activation": "PLUSZ300MB-O-M-UJ",
-          "deactivation": "XPLUSZ300MB-O-M-UJ"
-        }
+        "price": 500
       },
       {
         "id": "68860",
         "name": "Osztható Megújuló PluszAdat 1 GB",
         "description": "Ezzel a kiegészítö adatopcióval 1GB osztható adat áll rendelkezésedre minden számlázási ciklusban havi 1 400 Ft-ért a tarifádban, valamit az Automatikus PluszAdat opciódba foglalt adatmennyiségeden felül. A kiegészítö opció minden hónapban megújul, így nem kell minden hónapban megrendelned újra. Ha MultiNet Supreme-el is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!  A kiegészítö adatopciót a tarifádban foglalt adat felhasználásával azonos feltételek mellett használhatod.",
-        "active": true,
-        "price": 1400,
-        "psmCodes": {
-          "activation": "PLUSZ1GB-O-M-UJ",
-          "deactivation": "XPLUSZ1GB-O-M-UJ"
-        }
+        "price": 1400
       },
       {
         "id": "68861",
         "name": "Osztható Megújuló PluszAdat 5 GB",
         "description": "Ezzel a kiegészítö adatopcióval 5GB osztható adat áll rendelkezésedre minden számlázási ciklusban havi 3000 Ft-ért a tarifádban, valamit az Automatikus PluszAdat opciódba foglalt adatmennyiségeden felül. A kiegészítö opció minden hónapban megújul, így nem kell minden hónapban megrendelned újra. Ha MultiNet Supreme-el is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!  A kiegészítö adatopciót a tarifádban foglalt adat felhasználásával azonos feltételek mellett használhatod.",
-        "active": true,
-        "price": 3000,
-        "psmCodes": {
-          "activation": "PLUSZ5GB-O-M-UJ",
-          "deactivation": "XPLUSZ5GB-O-M-UJ"
-        }
+        "price": 3000
       },
       {
         "id": "68862",
         "name": "Osztható Megújuló PluszAdat 20 GB",
         "description": "Ezzel a kiegészítö adatopcióval 20GB osztható adat áll rendelkezésedre minden számlázási ciklusban havi 6000 Ft-ért a tarifádban, valamit az Automatikus PluszAdat opciódba foglalt adatmennyiségeden felül. A kiegészítö opció minden hónapban megújul, így nem kell minden hónapban megrendelned újra. Ha MultiNet Supreme-el is rendelkezel, lehetöséged van megosztani a kiegészítö PluszAdatot a két eszközöd között!  A kiegészítö adatopciót a tarifádban foglalt adat felhasználásával azonos feltételek mellett használhatod.",
-        "active": true,
-        "price": 6000,
-        "psmCodes": {
-          "activation": "PLUSZ20GB-O-M-UJ",
-          "deactivation": "XPLUSZ20GB-O-M-UJ"
-        }
+        "price": 6000
       }
     ],
     "unlimitedContentPackages": [
       {
-        "id": "UCP68348",
+        "id": "99",
         "name": "Navigate Pass",
         "description": "A Navigate Pass csomaggal úgy használhatod a népszerü navigációs applikációkat, hogy nem fogyasztod vele az adatkeretedet! A Navigate Passben foglalt alkalmazások csak addig nem fogyasztják az adatkereted, amíg rendelkezel minimális adattal. A Navigate Pass belföldön és az EU-n belül érhetö el, meghatározott applikációkra, személyi használatra, utazási célra, a tarifában foglalt vagy vásárolt kiegészítö adatopció erejéig. A Navigate Pass automatikusan megújul minden hónapban,így nem kell havonta újrarendelned.",
-        "featured": false,
-        "price": 1000,
-        "active": true,
-        "activeOnSubscription": false,
-        "psmCodes": {
-          "activation": "NAVIGATEPASSADDON",
-          "deactivation": "XNAVIGATEPASSADDON"
-        }
+        "price": 1000
       },
       {
-        "id": "UCP67696",
+        "id": "74",
         "name": "Music Pass",
         "description": "A Music Pass csomaggal úgy hallgathatsz zenét a népszerü online zene applikációkon, hogy nem fogyasztod az adatkereted!  A Music Passben foglalt alkalmazások csak addig nem fogyasztják az adatkereted, amíg rendelkezel minimális adattal. A Music Pass belföldön és az EU-n belül érhetö el, meghatározott applikációkra, személyi használatra, utazási célra, a tarifában foglalt vagy vásárolt kiegészítö adatopció erejéig. A Music Pass automatikusan megújul minden hónapban,így nem kell havonta újrarendelned. A Music Pass a zenei szolgáltatást nyújtó harmadik fél által havidíj ellenében elérhetö prémium funkcióik elérését nem tartalmazza, ezen fizetös tartalmak igénybevételéhez külön elöfizetés szükséges a zene szolgáltatónál.",
-        "featured": false,
-        "price": 1000,
-        "active": true,
-        "activeOnSubscription": false,
-        "psmCodes": {
-          "activation": "MUSICPASSADDON",
-          "deactivation": "XMUSICPASSADDON"
-        }
+        "price": 1000
       },
       {
-        "id": "UCP69102",
+        "id": "9645645",
         "name": "Video Pass",
         "description": "A Video Pass csomaggal kedvenc videóidat 480p minöségben nézheted a népszerü online video nézö applikációkon úgy, hogy nem fogyasztod az adatkeretedet! A Video Passben foglalt alkalmazások csak addig nem fogyasztják az adatkereted, amíg rendelkezel minimális adattal. A Video Pass belföldön és az EU-n belül érhetö el, meghatározott applikációkra, személyi használatra, utazási célra, a tarifában foglalt vagy vásárolt kiegészítö adatopció erejéig. A Video Pass automatikusan megújul minden hónapban,így nem kell havonta újrarendelned. A Video Pass a video szolgáltatást nyújtó harmadik fél által havidíj ellenében elérhetö prémium funkcióik elérését nem tartalmazza, ezen fizetös tartalmak igénybevételéhez külön elöfizetés szükséges a video szolgáltatónál.",
-        "featured": false,
-        "price": 5000,
-        "active": true,
-        "activeOnSubscription": false,
-        "psmCodes": {
-          "activation": "VFVIDEOPASSADDON",
-          "deactivation": "XVFVIDEOPASSADDON"
-        }
+        "price": 5000
       },
       {
-        "id": "UCP66205",
+        "id": "66868",
         "name": "Social Pass",
         "description": "A Social Pass csomaggal úgy használhatod a népszerü közösségi oldalak applikációit, hogy nem fogyasztod az adatkeretedet! Legyen szó akár képek vagy videók feltöltéséröl, vagy a hírfolyam olvasásáról!  A Social Pass belföldön és aktív Vodafone EU Roaming esetén az EU-n belül érhetö el, meghatározott applikációkra, személyi használatra, utazási célra, a tarifában foglalt vagy vásárolt kiegészítö adatopció erejéig. A Social Pass automatikusan megújul minden hónapban, így nem kell havonta újrarendelned.",
-        "featured": false,
-        "price": 881,
-        "active": false,
-        "activeOnSubscription": true,
-        "subscriptionType": "personal",
-        "expirationDate": "2019-04-30T11:59:59",
-        "psmCodes": {
-        }
+        "price": 881
       },
       {
-        "id": "UCP66907",
+        "id": "687",
         "name": "Connect Pass",
         "description": "A Connect Pass csomaggal úgy használhatod a népszerü online chat- és telefon szolgáltatást biztosító alkalmazásokat üzenetküldésre, hang- és videóhívásra, hogy nem fogyasztod az adatkeretedet! Legyen szó akár képek vagy videók elküldéséröl vagy videohívásról!  A  Connect Pass belföldön és aktív Vodafone EU Roaming esetén az EU-n belül érhetö el, meghatározott applikációkra, személyi használatra, utazási célra, a tarifában foglalt vagy vásárolt kiegészítö adatopció erejéig. A Connect Pass automatikusan megújul minden hónapban,így nem kell havonta újrarendelned.",
-        "featured": false,
-        "price": 2661,
-        "active": false,
-        "activeOnSubscription": true,
-        "subscriptionType": "personal",
-        "expirationDate": "2019-04-30T11:59:59",
-        "psmCodes": {
-        }
+        "price": 2661
       }
     ]
   }
