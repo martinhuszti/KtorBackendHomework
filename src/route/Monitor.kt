@@ -2,20 +2,23 @@ package hu.martinhuszti.route
 
 import hu.martinhuszti.Monitor
 import hu.martinhuszti.model.monitor.Connection
+import hu.martinhuszti.withMongoDatabase
 import io.ktor.application.call
 import io.ktor.locations.get
 import io.ktor.response.respondText
 import io.ktor.routing.Route
-import org.litote.kmongo.coroutine.coroutine
-import org.litote.kmongo.reactivestreams.KMongo
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.util.*
 
-fun Route.monitorModule(mongoUrl: String?) {
+fun Route.monitorModule() {
     get<Monitor> {
-        checkNotNull(mongoUrl)
-        val client = KMongo.createClient(mongoUrl).coroutine //use coroutine extension
-        val database = client.getDatabase("monitor") //normal java driver usage
-        database.getCollection<Connection>("connection").insertOne(Connection(Date()))
+        GlobalScope.launch {
+            withMongoDatabase { database ->
+                database.getCollection<Connection>("connection").insertOne(Connection(Date()))
+            }
+        }
+
         call.respondText { "Connection Monitor inserted" }
     }
 

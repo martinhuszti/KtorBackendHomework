@@ -2,10 +2,7 @@
 
 package hu.martinhuszti
 
-import hu.martinhuszti.route.dashboardModule
-import hu.martinhuszti.route.landing
-import hu.martinhuszti.route.loginModule
-import hu.martinhuszti.route.monitorModule
+import hu.martinhuszti.route.*
 import hu.martinhuszti.setup.setupAuth
 import hu.martinhuszti.setup.setupGson
 import io.ktor.application.install
@@ -30,9 +27,11 @@ class Monitor
 @Location("/dashboard")
 class Dashboard
 
-fun main() {
+@Location("/addbankcard")
+class AddBankCard
 
-    val mongoUrl = System.getenv("MONGOURL")?.toString()
+
+fun main() {
     val port = System.getenv("PORT")?.toInt() ?: 8080
 
     embeddedServer(Netty, port) {
@@ -41,14 +40,17 @@ fun main() {
         install(AutoHeadResponse)
         install(Locations)
 
+
         routing {
             authenticate("auth") {
                 landing()
                 loginModule()
                 dashboardModule()
+                bankCardModule()
             }
+
             // no need for auth
-            monitorModule(mongoUrl)
+            monitorModule()
 
         }
 
