@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "name": "Ez a backendről jött",
+      "number": "xxx-xxxx-xxxx-1234"
+    },
+    {
+      "name": "Ez is....",
+      "number": "xxx-xxxx-xxxx-5678"
+    },
+    {
+      "name": "Hitelkártya",
+      "number": "xxx-xxxx-xxxx-9999"
+    },
+    {
+      "name": "Hitelkártya",
+      "number": "xxx-xxxx-xxxx-9999"
+    },
+    {
+      "name": "Hitelkártya",
+      "number": "xxx-xxxx-xxxx-9999"
+    },
+    {
+      "name": "Hitelkártya",
+      "number": "xxx-xxxx-xxxx-9999"
+    },
+    {
+      "name": "Hitelkártya",
+      "number": "xxx-xxxx-xxxx-9999"
+    },
+    {
+      "name": "Hitelkártya",
+      "number": "xxx-xxxx-xxxx-9999"
+    }
+  ]
+}

@@ -30,6 +30,9 @@ class Dashboard
 @Location("/addbankcard")
 class AddBankCard
 
+@Location("/bankcards")
+class AllBankCard
+
 
 fun main() {
     val port = System.getenv("PORT")?.toInt() ?: 8080
@@ -46,7 +49,8 @@ fun main() {
                 landing()
                 loginModule()
                 dashboardModule()
-                bankCardModule()
+                addBankCardModule()
+                bankCardsModule()
             }
 
             // no need for auth

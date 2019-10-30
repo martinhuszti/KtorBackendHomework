@@ -10,21 +10,20 @@ import io.ktor.routing.Route
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-data class BankCard(
+data class BankCards(
     val number: String = "xxxx-xxxx-xxxx-xxxx",
     val expires: String = "0000",
     val name: String = "Példakártya",
     val cardholder: String = "Példa János"
 )
 
-fun Route.bankCardModule() {
+fun Route.addBankCardModule() {
     post<AddBankCard> {
-        val bankCard = call.receive<BankCard>()
+        val bankCard = call.receive<BankCards>()
 
         GlobalScope.launch {
             withMongoDatabase {
-                kotlinx.coroutines.delay(90000L)
-                it.getCollection<BankCard>("bankcard").insertOne(bankCard)
+                it.getCollection<BankCards>("bankcard").insertOne(bankCard)
             }
         }
         call.respondText { "Bankcard saved!" }
