@@ -3,6 +3,8 @@
 package hu.martinhuszti
 
 import hu.martinhuszti.route.*
+import hu.martinhuszti.route.bankcard.addBankCardModule
+import hu.martinhuszti.route.bankcard.bankCardsModule
 import hu.martinhuszti.setup.setupAuth
 import hu.martinhuszti.setup.setupGson
 import io.ktor.application.install
@@ -33,6 +35,9 @@ class AddBankCard
 @Location("/bankcards")
 class AllBankCard
 
+@Location("/pay")
+class Payment
+
 
 fun main() {
     val port = System.getenv("PORT")?.toInt() ?: 8080
@@ -51,6 +56,7 @@ fun main() {
                 dashboardModule()
                 addBankCardModule()
                 bankCardsModule()
+                paymentModule()
             }
 
             // no need for auth

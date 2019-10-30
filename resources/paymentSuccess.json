@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "responseType": "payment",
+  "payment": {
+    "isSuccessful": true,
+    "message": "Sikeres fizetés!",
+    "exception": ""
+  }
+}

@@ -1,4 +1,4 @@
-package hu.martinhuszti.route
+package hu.martinhuszti.route.bankcard
 
 import hu.martinhuszti.AllBankCard
 import io.ktor.application.call

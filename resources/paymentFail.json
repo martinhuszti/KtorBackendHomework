@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "responseType": "payment",
+  "payment": {
+    "isSuccessful": false,
+    "message": "Sikertelen fizetés!",
+    "exception": "Nincs elég kredit a bankkártyán"
+  }
+}
