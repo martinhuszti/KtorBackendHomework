@@ -7,9 +7,11 @@ import io.ktor.response.respondFile
 import io.ktor.routing.Route
 import java.io.File
 
+/**
+ * Respond a static JSON file with the packages available
+ */
 fun Route.dashboardModule() {
     get<Dashboard> {
         call.respondFile(File("resources/dashboard.json"))
     }
-
 }

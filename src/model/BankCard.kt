@@ -1,5 +1,6 @@
 package hu.martinhuszti.model
 
+
 class BankCard(
     val number: String = "xxxx-xxxx-xxxx-xxxx",
     val expires: String = "0000",

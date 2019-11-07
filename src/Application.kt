@@ -3,10 +3,8 @@
 package hu.martinhuszti
 
 import hu.martinhuszti.route.*
-import hu.martinhuszti.route.bankcard.addBankCardModule
-import hu.martinhuszti.route.bankcard.bankCardsModule
 import hu.martinhuszti.setup.setupAuth
-import hu.martinhuszti.setup.setupGson
+import hu.martinhuszti.setup.setupGSON
 import io.ktor.application.install
 import io.ktor.auth.authenticate
 import io.ktor.features.AutoHeadResponse
@@ -33,7 +31,7 @@ class Dashboard
 class AddBankCard
 
 @Location("/bankcards")
-class AllBankCard
+class ListAllBankCards
 
 @Location("/pay")
 class Payment
@@ -41,31 +39,27 @@ class Payment
 
 fun main() {
     val port = System.getenv("PORT")?.toInt() ?: 8080
-
-    embeddedServer(Netty, port) {
-        setupGson()
+    val server = embeddedServer(Netty, port) {
+        setupGSON()
         setupAuth()
         install(AutoHeadResponse)
         install(Locations)
 
 
         routing {
+            // Need authentication to reach these endpoints
             authenticate("auth") {
-                landing()
+                landingPage()
                 loginModule()
                 dashboardModule()
-                addBankCardModule()
-                bankCardsModule()
+                bankCardModule()
                 paymentModule()
             }
-
-            // no need for auth
+            // No need to auth
             monitorModule()
-
         }
-
-
-    }.start(wait = true)
+    }
+    server.start(wait = true)
 }
 
 

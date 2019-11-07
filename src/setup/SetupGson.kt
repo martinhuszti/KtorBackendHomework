@@ -5,7 +5,10 @@ import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.gson.gson
 
-fun Application.setupGson() {
+/**
+ * Set up the GSON parser
+ */
+fun Application.setupGSON() {
     install(ContentNegotiation) {
         gson {
             setPrettyPrinting()

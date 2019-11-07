@@ -11,6 +11,6 @@ import io.ktor.routing.Route
  */
 fun Route.loginModule() {
     post<Login> {
-            call.respond(mapOf("success" to true))
-        }
+        call.respond(mapOf("success" to true))
+    }
 }

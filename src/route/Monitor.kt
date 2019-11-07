@@ -11,6 +11,9 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.util.*
 
+/**
+ * Insert monitor document to connection collection
+ */
 fun Route.monitorModule() {
     get<Monitor> {
         GlobalScope.launch {
@@ -18,8 +21,6 @@ fun Route.monitorModule() {
                 database.getCollection<Connection>("connection").insertOne(Connection(Date()))
             }
         }
-
         call.respondText { "Connection Monitor inserted" }
     }
-
 }
