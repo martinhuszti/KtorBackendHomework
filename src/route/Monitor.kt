@@ -1,7 +1,7 @@
 package hu.martinhuszti.route
 
 import hu.martinhuszti.Monitor
-import hu.martinhuszti.model.monitor.Connection
+import hu.martinhuszti.model.Connection
 import hu.martinhuszti.withMongoDatabase
 import io.ktor.application.call
 import io.ktor.locations.get

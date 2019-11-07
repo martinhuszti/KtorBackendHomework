@@ -1,8 +1,6 @@
-package hu.martinhuszti.route.bankcard
+package hu.martinhuszti.route
 
-import com.mongodb.reactivestreams.client.Success
 import hu.martinhuszti.AddBankCard
-import hu.martinhuszti.model.BankCard
 import hu.martinhuszti.withMongoDatabase
 import io.ktor.application.call
 import io.ktor.locations.post
@@ -12,12 +10,20 @@ import io.ktor.routing.Route
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-fun Route.addBankCardModule() {
+data class BankCard(
+    val number: String = "xxxx-xxxx-xxxx-xxxx",
+    val expires: String = "0000",
+    val name: String = "Példakártya",
+    val cardholder: String = "Példa János"
+)
+
+fun Route.bankCardModule() {
     post<AddBankCard> {
         val bankCard = call.receive<BankCard>()
 
         GlobalScope.launch {
             withMongoDatabase {
+                kotlinx.coroutines.delay(90000L)
                 it.getCollection<BankCard>("bankcard").insertOne(bankCard)
             }
         }

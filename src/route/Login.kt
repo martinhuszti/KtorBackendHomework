@@ -6,9 +6,11 @@ import io.ktor.locations.post
 import io.ktor.response.respond
 import io.ktor.routing.Route
 
+/**
+ * If basic auth if correct the server respond to the client
+ */
 fun Route.loginModule() {
     post<Login> {
-        //TODO val user = call.sessions.get()?.let { dao.user(it.userId) }
             call.respond(mapOf("success" to true))
         }
 }
